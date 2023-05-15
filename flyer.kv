@@ -1,0 +1,93 @@
+StackLayoutExample:
+
+<StackLayoutExample>:
+    Button:
+        text: 'a'
+        size_hint: .2, .2
+    Button:
+        text: 'b'
+        size_hint: .2, .2
+    Button:
+        text: 'c'
+        size_hint: .2, .2
+    Button:
+        text: 'd'
+        size_hint: .2, .2
+    Button:
+        text: 'e'
+        size_hint: .2, .2
+    Button:
+        text: 'f'
+        size_hint: .2, .2
+
+
+<GridLayoutExample@GridLayout>:
+    rows: 2
+    cols: 3
+    Button:
+        text: 'a'
+        size_hint: None, 1
+        width: '60dp'
+    BoxLayoutExample:
+    Button:
+        text: 'c'
+    Button:
+        text: 'd'
+        size_hint: None, 1
+        width: '60dp'
+    Button:
+        text: 'e'
+    Button:
+        text: 'f'
+
+
+<AnchorLayoutExample>:
+    anchor_x: 'center'
+    anchor_y: 'top'
+    BoxLayout:
+        size_hint: .2, .2
+        Button:
+            text: 'A'
+        Button:
+            text: 'B'
+
+
+
+<BoxLayoutExample>:
+    orientation: 'horizontal'
+    Button:
+        text: 'A'
+
+        # size: '100dp', '60dp'
+        # width: '100dp'
+        height: '60dp'
+        size_hint: 1, 1
+        # pos_hint: {'center_x': .5}
+
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: '1dp'
+        Button:
+            text: 'B1'
+        Button:
+            text: 'B2'
+        Button:
+            text: 'B3'
+        Button:
+            text: 'B4'
+    Label:
+        text: 'C'
+
+<MainWidget>:
+    Button:
+        text: 'joe'
+        size: '100dp', '80dp'
+        pos: '100dp', '200dp'
+        color: 0, 0, 1, 1
+    Label:
+        text: 'joee'
+        size: '100dp', '80dp'
+        pos: '200dp', '300dp'
+        color: 1, 0, 0, 1
+
+
